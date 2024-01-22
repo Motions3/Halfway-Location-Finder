@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Me Halfway</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="location-inputs">
+    <label for="yourLocation">Your Zip/Post Code:</label>
+    <input type="text" id="yourLocation" placeholder="Enter your Zip/Post Code">
+
+    <label for="friendLocation" class="friend-label">Friend's Zip/Post Code:</label>
+    <input type="text" id="friendLocation" placeholder="Enter friend's Zip/Post Code" class="friend-input">
+
+    <button onclick="findMeetupLocation()">Find Meetup Location</button>
+  </div>
+
+  <div id="map-container"></div>
+
+  <div id="distance-info"></div>
+
+  <!-- Change "YOUR_API_KEY" To Your Google Maps API Key -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script src="script.js"></script>
+</body>
+</html>
